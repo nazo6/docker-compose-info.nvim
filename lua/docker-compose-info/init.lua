@@ -20,7 +20,7 @@ local function get_image_info_of_text(buf)
       local user, name = image_name:match "^(.-)/(.*)$"
       if (not user) or not name then
         name = image_name
-        user = "_"
+        user = "library"
       end
       info[i] = { user = user, name = name, tag = tag }
     end
